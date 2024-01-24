@@ -44,7 +44,8 @@ user-agb|Healthcare professional|The AGB identifier of the healthcare profession
 user-given-name|Healthcare professional|The given (first) name(s) of the healthcare professional|string|1..1
 user-family-name|Healthcare professional|The family (last) name of the healthcare professional|string|1..1
 user-email|Healthcare professional|The work email of the healthcare professional. Must be unique to the user and not re-used across several different user accounts.|string|1..1
-patient-bsn|Patient identification|The verified BSN of the patient|string|1..1
+patient-bsn|Patient identification|The verified BSN of the patient|string|0..1
+patient-id|Patient identification|A unique local identifier of the patient|string|0..1
 patient-given-name|Patient identification|The given (first) name(s) of the patient|string|1..1
 patient-family-name|Patient identification|The family (last) name of the patient|string|1..1
 
