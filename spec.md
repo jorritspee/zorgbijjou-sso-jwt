@@ -20,7 +20,7 @@ In addition to the normal requirements for a signed JWT, the following requireme
 
 # Payload of the JWT
 
-The payload of the JWT represents the entirety of the authentication-related data that is sent from your partner system to HINQ in JSON format. The JWT payload consists of four groups of data:
+The payload of the JWT represents the entirety of the authentication-related data that is sent from the XIS system to teh Viewer system in JSON format. The JWT payload consists of four groups of data:
 
 1. General data of the JWT token
 2. Data of the healthcare organisation to which the professional belongs
@@ -55,11 +55,11 @@ Accepted organisation identifiers are: URA code, AGB code and the internal partn
 
 Supplying a valid URA or AGB code for the organisation is the responsibility of the partner system. This information is used for logging and legal compliance.
 
-The **Internal partner system identifier** option allows the partner system to define and use a custom organisation identifier. When this identifier is used, the partner system has to supply a list of internal identifiers and the organisation for each identifier in order for HINQ to relate this information to an AGB or URA code.
+The **Internal partner system identifier** option allows the partner system to define and use a custom organisation identifier. When this identifier is used, the XIS vendor has to supply a list of internal identifiers and the organisation for each identifier in order for the Viewer to relate this information to an AGB or URA code.
 
 ### Professional identifiers
 
-Accepted professional identifiers are: UZI, BIG, AGB and internal partner system identifier. The global identifiers are listed in order of preference, and the unique internal partner system identifier claim is always mandatory as it is linked to a user in HINQ’s user store during the first use of the SSO, and subsequently used to uniquely identify the user in all further SSO logins. It is vital that the unique identifiers are kept consistent with regards to the users they represent throughout all SSO requests. Similarly, a user email must be unique to its user and not re-used across several different user accounts. The usage of global identifiers, in addition to the unique internal identifier, is strongly encouraged.
+Accepted professional identifiers are: UZI, BIG, AGB and internal partner system identifier. The global identifiers are listed in order of preference, and the unique internal partner system identifier claim is always mandatory as it is linked to a user in the Viewer's user store during the first use of the SSO, and subsequently used to uniquely identify the user in all further SSO logins. It is vital that the unique identifiers are kept consistent with regards to the users they represent throughout all SSO requests. Similarly, a user email must be unique to its user and not re-used across several different user accounts. The usage of global identifiers, in addition to the unique internal identifier, is strongly encouraged.
 
 ### Patient identifiers
 
