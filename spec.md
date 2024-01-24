@@ -32,7 +32,7 @@ The table below documents all fields in the four groups. An example payload is a
 ## Data in the JWT Payload
 
 **field name**|**data group**|**explanation**|**type**|**cardinality**
-:-----:|:-----:|:-----:|:-----:|:-----:
+:-----:|:-----:|:-----|:-----:|:-----:
 org-id|Healthcare organisation|The unique internal partner system identifier of the organization|string|1..1
 org-ura|Healthcare organisation|The URA identifier of the organization|string|0..1
 org-agb|Healthcare organisation|The AGB identifier of the organization|string|0..1
