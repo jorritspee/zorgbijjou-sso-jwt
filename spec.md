@@ -129,7 +129,7 @@ Examples:
 
 The Viewer SSO endpoint expects an HTTP POST request in the following format:
 
-```json
+```curl
 POST <PATH> HTTP/1.1
 
 /* ...generic HTTP headers... */
@@ -141,7 +141,7 @@ jwt=TOKEN_HERE
 
 Example:
 
-```json
+```curl
 POST /auth/realms/hinq/broker/<source-system>/endpoint/clients/zno-webapp/login HTTP/1.1
 Host: login.acc.hinq.nl
 Content-Type: application/x-www-form-urlencoded
